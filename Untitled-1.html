@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Valeria Ortiz | Portfolio</title>
+<meta name="description" content="Portfolio of Valeria Azucena Ortiz Hurtado, high school student and ¡Supérate! ADOC scholar focused on marketing and technology.">
+<meta property="og:title" content="Valeria Ortiz | Portfolio">
+<meta property="og:description" content="High school student and ¡Supérate! ADOC scholar focused on marketing and technology.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☀️</text></svg>">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root{--cream:#F7F1E3;--yellow:#F7C948;--blue:#3F7099;--brown:#3B1F1A;--soft:#5A3F38;--sky:#8DB4D3;
+--font-display:"Anton","Arial Narrow",Impact,sans-serif;--font-body:"Poppins",system-ui,-apple-system,"Segoe UI",sans-serif;
+--radius:22px;--pill:999px;--max:1160px;--pad:clamp(1.1rem,4vw,2.5rem)}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:4.5rem}
+body{margin:0;font-family:var(--font-body);color:var(--brown);background:var(--cream);line-height:1.7}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+.dark :focus-visible,.blue :focus-visible{outline-color:var(--yellow)}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--pad)}
+h1,h2,h3{margin:0;font-weight:400}
+h3{font-family:var(--font-body);font-weight:600;font-size:1.15rem}
+.ico{width:1.5rem;height:1.5rem;color:currentColor;flex:none}
+.panel{border-radius:var(--radius);padding:clamp(1.5rem,4vw,2.75rem);margin-bottom:1.25rem}
+.yellow{background:var(--yellow);color:var(--brown)}
+.blue{background:var(--blue);color:#fff}
+.dark{background:var(--brown);color:var(--cream)}
+.sec-title{display:flex;align-items:center;gap:.8rem;margin-bottom:1.75rem}
+.sec-title h2{font-family:var(--font-display);font-size:clamp(1.7rem,4.5vw,2.6rem);letter-spacing:.03em;text-transform:uppercase;line-height:1.1}
+.sec-title::after{content:"";flex:1;height:2px;background:currentColor;opacity:.35}
+.btn{display:inline-block;text-decoration:none;font-weight:600;font-size:.9rem;padding:.65rem 1.4rem;border-radius:var(--pill);border:2px solid var(--brown);background:var(--brown);color:var(--cream);transition:background .2s,color .2s}
+.btn:hover{background:transparent;color:var(--brown)}
+.btn.ghost{background:transparent;color:var(--brown)}
+.btn.ghost:hover{background:var(--brown);color:var(--cream)}
+.btn.soon{background:transparent;color:var(--soft);border-style:dashed;cursor:default}
+.btn.soon:hover{background:transparent;color:var(--soft)}
+.pill{display:inline-block;font-size:.8rem;font-weight:600;padding:.35rem 1rem;border-radius:var(--pill)}
+.pill.y{background:var(--yellow);color:var(--brown)}
+.pill.o{border:1.5px solid var(--brown)}
+.pill.b{background:var(--blue);color:#fff;font-size:.9rem;padding:.5rem 1.4rem}
+
+.nav{position:sticky;top:0;z-index:20;background:var(--cream);border-bottom:1px solid rgba(59,31,26,.15)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;min-height:3.5rem}
+.brand{display:flex;align-items:center;gap:.5rem;font-family:var(--font-display);font-size:1.25rem;letter-spacing:.04em;text-decoration:none}
+.brand .ico{color:var(--yellow)}
+.nav ul{list-style:none;margin:0;padding:0;display:flex;gap:1.75rem}
+.nav ul a{text-decoration:none;font-weight:600;font-size:.9rem;padding:.25rem 0;border-bottom:2px solid transparent}
+.nav ul a:hover{border-color:var(--yellow)}
+.menu-btn{display:none;background:none;border:2px solid var(--brown);color:var(--brown);border-radius:var(--pill);padding:.3rem .9rem;font:600 .85rem var(--font-body);cursor:pointer}
+@media(max-width:719px){
+.menu-btn{display:block}
+.nav ul{display:none;position:absolute;left:0;right:0;top:100%;flex-direction:column;gap:0;background:var(--cream);border-bottom:1px solid rgba(59,31,26,.15)}
+.nav ul.open{display:flex}
+.nav ul a{display:block;padding:.9rem var(--pad)}}
+
+.hero{position:relative;overflow-x:clip;padding-top:1.5rem}
+.disc{position:absolute;left:-7rem;top:3rem;width:clamp(9rem,24vw,16rem);aspect-ratio:1;border-radius:50%;background:var(--yellow)}
+.burst{position:absolute;right:-3.5rem;top:1rem;width:clamp(8rem,22vw,15rem);aspect-ratio:1;color:var(--yellow)}
+.word{position:relative;z-index:1;font-family:var(--font-display);font-size:clamp(4rem,19.5vw,15.5rem);line-height:.95;letter-spacing:.005em;text-align:center;color:var(--brown);user-select:none}
+.hero .pill.b{position:relative;z-index:1;margin:.5rem 0 1.5rem}
+.hero-grid{position:relative;display:grid;gap:1.5rem}
+.photo-panel{position:relative;z-index:2;background:var(--blue);border-radius:var(--radius);padding:clamp(.8rem,3vw,1.6rem);order:-1;margin-top:-1.5rem}
+.photo-panel .photo{aspect-ratio:4/5;max-height:560px;width:100%;border-radius:16px;overflow:hidden;background:linear-gradient(160deg,var(--sky),var(--yellow))}
+.photo-panel img{width:100%;height:100%;object-fit:cover}
+.stamp{position:absolute;right:-.4rem;top:-1rem;transform:rotate(4deg);background:var(--yellow);color:var(--brown);border:2px dashed var(--brown);border-radius:10px;padding:.45rem .8rem;text-align:center;font-family:var(--font-display);letter-spacing:.06em;line-height:1.1;font-size:.95rem}
+.stamp .ico{margin:0 auto .15rem}
+.intro .hello{display:flex;align-items:center;gap:.5rem;font-weight:600;color:var(--blue);letter-spacing:.04em}
+.intro h1{font-family:var(--font-display);text-transform:uppercase;font-size:clamp(2.6rem,7.5vw,4.75rem);line-height:1;letter-spacing:.02em;margin:.5rem 0 1rem}
+.role{margin:0 0 .75rem;font-weight:600;font-size:1.05rem}
+.tagline{margin:0 0 1.25rem;color:var(--soft);max-width:36rem}
+.row{display:flex;flex-wrap:wrap;gap:.6rem;margin-bottom:1.25rem}
+@media(min-width:900px){.hero-grid{grid-template-columns:1fr 1.05fr;gap:2.5rem;align-items:start}.intro{padding-top:1rem}}
+
+.stats{list-style:none;display:grid;grid-template-columns:repeat(2,1fr);gap:1.25rem 0;margin:0 0 1.25rem;padding:1.5rem 0;border-radius:var(--radius)}
+.stats li{padding:0 1.25rem;text-align:left}
+.stats li+li{border-left:1px solid rgba(247,241,227,.3)}
+.stats li:nth-child(3){border-left:0}
+.stats b{display:block;font-family:var(--font-display);font-weight:400;font-size:clamp(2rem,5vw,2.8rem);line-height:1;color:var(--yellow)}
+.stats span{font-size:.8rem}
+@media(min-width:720px){.stats{grid-template-columns:repeat(4,1fr)}.stats li:nth-child(3){border-left:1px solid rgba(247,241,227,.3)}}
+
+.about{display:grid;gap:1.5rem}
+.about p{margin:0 0 1.1rem;max-width:64ch}
+.about p:last-child{margin-bottom:0}
+@media(min-width:900px){.about{grid-template-columns:1fr 1.6fr;gap:3rem}}
+.about .intro-title{font-family:var(--font-display);font-size:clamp(2.4rem,6vw,4rem);line-height:1;text-transform:uppercase;color:var(--yellow)}
+.badges{list-style:none;margin:1.25rem 0 0;padding:0;display:flex;flex-wrap:wrap;gap:.5rem}
+
+.cards{display:grid;gap:1.25rem;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.card{background:var(--cream);border-radius:16px;overflow:hidden;display:flex;flex-direction:column;border:2px solid var(--brown)}
+.thumb{aspect-ratio:16/10;background:linear-gradient(135deg,var(--sky),var(--blue))}
+.thumb img{width:100%;height:100%;object-fit:cover}
+.card-body{padding:1.25rem;display:flex;flex-direction:column;gap:.5rem;flex:1}
+.card-head{display:flex;align-items:center;gap:.6rem}
+.num{display:grid;place-items:center;width:1.9rem;height:1.9rem;border-radius:50%;background:var(--brown);color:var(--yellow);font-size:.8rem;font-weight:600;flex:none}
+.date{margin:0;font-size:.85rem;font-weight:600;color:var(--blue)}
+.card dl{margin:0;font-size:.92rem}
+.card dt{font-weight:600;margin-top:.6rem;color:var(--blue)}
+.card dd{margin:0;color:var(--soft)}
+.card-actions{margin-top:auto;padding-top:1rem;display:flex;flex-wrap:wrap;gap:.6rem}
+
+.skills{display:grid;gap:1.25rem;margin-bottom:1.25rem}
+.skills .panel{margin-bottom:0}
+@media(min-width:900px){.skills{grid-template-columns:1fr 1.3fr}}
+.hard{list-style:none;margin:0;padding:0;display:grid;gap:.9rem}
+.hard li{border-top:1px solid rgba(255,255,255,.35);padding-top:.9rem}
+.hard strong{display:block}
+.hard span{font-size:.92rem;opacity:.95}
+.hard a{color:var(--yellow)}
+.chips{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:.6rem}
+.chips li{border:1.5px solid var(--yellow);border-radius:var(--pill);padding:.45rem 1rem;font-size:.92rem;font-weight:500}
+
+.contact{display:grid}
+.contact>div{padding:clamp(2rem,6vw,3.5rem) var(--pad)}
+.contact h2{font-family:var(--font-display);font-size:clamp(2.2rem,6vw,3.6rem);line-height:1.05;text-transform:uppercase;margin:.4rem 0 1.25rem}
+.contact p{margin:0 0 1.25rem;max-width:42ch}
+.links{list-style:none;margin:0;padding:0;display:grid;gap:.7rem}
+.links a{display:flex;align-items:center;gap:.7rem;text-decoration:none;font-weight:500;overflow-wrap:anywhere}
+.links a:hover{text-decoration:underline}
+.links .ico{color:var(--yellow);width:1.15rem;height:1.15rem}
+.thanks{margin-top:1.5rem;display:inline-block;background:var(--cream);color:var(--blue);border-radius:16px;padding:1rem 1.5rem;font-weight:600;text-align:center}
+.thanks .ico{color:var(--yellow);margin:0 auto .25rem}
+@media(min-width:820px){.contact{grid-template-columns:1.1fr 1fr}}
+.copy{margin:0;padding:1rem var(--pad);text-align:center;font-size:.85rem;background:var(--brown);color:var(--cream)}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+<symbol id="sun" viewBox="0 0 200 200">
+<circle cx="100" cy="100" r="70" fill="none" stroke="currentColor" stroke-width="56" stroke-dasharray="2.4 15.93"/>
+<circle cx="100" cy="100" r="28" fill="currentColor"/>
+</symbol>
+</svg>
+
+<nav class="nav" aria-label="Main navigation">
+<div class="wrap">
+<a class="brand" href="#inicio"><svg class="ico" aria-hidden="true"><use href="#sun"/></svg>Valeria Ortiz</a>
+<button class="menu-btn" aria-expanded="false" aria-controls="menu">Menu</button>
+<ul id="menu">
+<li><a href="#sobre-mi">About</a></li>
+<li><a href="#proyectos">Projects</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#contacto">Contact</a></li>
+</ul>
+</div>
+</nav>
+
+<header class="hero" id="inicio">
+<div class="disc" aria-hidden="true"></div>
+<svg class="burst" aria-hidden="true"><use href="#sun"/></svg>
+<div class="wrap">
+<div class="word" aria-hidden="true">PORTFOLIO</div>
+<span class="pill b">Marketing • Technology • Data Analysis</span>
+<div class="hero-grid">
+<div class="intro">
+<p class="hello"><svg class="ico" aria-hidden="true"><use href="#sun"/></svg>Hello, I’m</p>
+<h1>Valeria Azucena Ortiz Hurtado</h1>
+<p class="role">High School Student &amp; ¡Supérate! ADOC Scholar</p>
+<p class="tagline">“Combining creativity, technology, and strategic thinking to grow professionally and add value to every project.”</p>
+<div class="row">
+<span class="pill o">¡Supérate! ADOC Scholar</span>
+<span class="pill y">Excel Expert • TOEIC Certified</span>
+</div>
+<div class="row">
+<a class="btn" href="#proyectos">View my work</a>
+<a class="btn ghost" href="#contacto">Get in touch</a>
+</div>
+</div>
+<div class="photo-panel">
+<div class="stamp" aria-hidden="true"><svg class="ico" aria-hidden="true"><use href="#sun"/></svg>THINK<br>BRIGHT</div>
+<div class="photo">
+<img src="images/valeria.jpg" width="640" height="800" alt="Professional portrait of Valeria Ortiz smiling at the camera">
+</div>
+</div>
+</div>
+</div>
+</header>
+
+<main class="wrap">
+<ul class="stats dark" aria-label="Quick facts">
+<li><b>3</b><span>Featured projects</span></li>
+<li><b>4</b><span>Coding languages &amp; tools</span></li>
+<li><b>3</b><span>Certifications highlighted</span></li>
+<li><b>8</b><span>Soft skills</span></li>
+</ul>
+
+<section id="sobre-mi" class="panel blue" aria-labelledby="about-title">
+<div class="about">
+<div>
+<h2 id="about-title" class="intro-title">About me</h2>
+<ul class="badges" aria-label="Highlights">
+<li><a href="https://superate2014-my.sharepoint.com/:f:/g/personal/valeria_ortiz2026_adoc_superate_org/IgC8xxqKZmIjQouqiaKaWawtAe5EPbJqCaopRXiEi1yP0f8?e=Dm4w12" target="_blank" rel="noopener" style="text-decoration:none;"><span class="pill y">Excel Expert ↗</span></a></li>
+<li><span class="pill y">TOEIC Certified (575 pts)</span></li>
+<li><span class="pill y">¡Supérate! ADOC</span></li>
+</ul>
+</div>
+<div>
+<p>I am a high school student and a scholar of the ¡Supérate! ADOC Enterprise Program, where I have strongly strengthened my skills in English, computer science, leadership, and teamwork.</p>
+<p>I am currently continuing my education at Complejo Educativo Residencial Altavista and Centro ¡Supérate! ADOC. I possess solid technical foundations ranging from data analysis (Excel Expert &amp; Power BI) to programming and development fundamentals, backed by official certifications and diplomas (including Personal Finance from UPES and English Conversation Club from TELUS Digital).</p>
+<p>I am passionate about continuous learning and aim to develop professionally in the field of marketing and technology, bridging problem-solving with creative and innovative ideas.</p>
+</div>
+</div>
+</section>
+
+<section id="proyectos" class="panel yellow" aria-labelledby="projects-title">
+<div class="sec-title"><svg class="ico" aria-hidden="true"><use href="#sun"/></svg><h2 id="projects-title">Featured projects</h2></div>
+<div class="cards">
+
+<article class="card">
+<div class="thumb">
+<svg viewBox="0 0 400 250" role="img" aria-label="Illustration of a dog and a cat with a heart between them" preserveAspectRatio="xMidYMid slice" style="width:100%;height:100%;display:block;background:#F7C948">
+<circle cx="200" cy="125" r="170" fill="#F7F1E3" opacity=".35"/>
+<!-- dog -->
+<ellipse cx="108" cy="118" rx="26" ry="52" fill="#3B1F1A" transform="rotate(18 108 118)"/>
+<ellipse cx="212" cy="118" rx="26" ry="52" fill="#3B1F1A" transform="rotate(-18 212 118)" opacity="0"/>
+<ellipse cx="160" cy="135" rx="58" ry="62" fill="#C98B4E"/>
+<ellipse cx="212" cy="118" rx="22" ry="48" fill="#3B1F1A" transform="rotate(-18 212 118)"/>
+<ellipse cx="160" cy="158" rx="30" ry="24" fill="#F7F1E3"/>
+<circle cx="140" cy="122" r="7" fill="#3B1F1A"/><circle cx="180" cy="122" r="7" fill="#3B1F1A"/>
+<ellipse cx="160" cy="147" rx="11" ry="8" fill="#3B1F1A"/>
+<path d="M160 155v10M148 168q12 10 24 0" fill="none" stroke="#3B1F1A" stroke-width="3" stroke-linecap="round"/>
+<!-- cat -->
+<path d="M262 92l-6-46 36 24z M338 92l6-46-36 24z" fill="#3F7099"/>
+<ellipse cx="300" cy="130" rx="54" ry="50" fill="#3F7099"/>
+<path d="M270 80l-4-20 16 11z M330 80l4-20-16 11z" fill="#8DB4D3"/>
+<ellipse cx="282" cy="124" rx="7" ry="9" fill="#F7F1E3"/><ellipse cx="318" cy="124" rx="7" ry="9" fill="#F7F1E3"/>
+<ellipse cx="282" cy="125" rx="3" ry="7" fill="#3B1F1A"/><ellipse cx="318" cy="125" rx="3" ry="7" fill="#3B1F1A"/>
+<path d="M295 142h10l-5 7z" fill="#F7C948"/>
+<path d="M300 149q-6 9-14 6M300 149q6 9 14 6" fill="none" stroke="#F7F1E3" stroke-width="3" stroke-linecap="round"/>
+<path d="M268 146l-30-6M268 154l-30 6M332 146l30-6M332 154l30 6" stroke="#F7F1E3" stroke-width="2.5" stroke-linecap="round"/>
+<!-- heart -->
+<path d="M230 62c-10-14-30-2-18 12l18 17 18-17c12-14-8-26-18-12z" fill="#D9453D"/>
+</svg>
+</div>
+<div class="card-body">
+<div class="card-head"><span class="num" aria-hidden="true">01</span><h3>FurryLove</h3></div>
+<p class="date">Nov 2024 – Present</p>
+<dl>
+<dt>Problem</dt>
+<dd>Many dogs and cats in El Salvador shelters wait a long time for a home, and adopters struggle to find them.</dd>
+<dt>Process</dt>
+<dd>A platform connected with various animal shelters that helps people adopt dogs and cats, built through close teamwork.</dd>
+<dt>Result</dt>
+<dd>A meaningful solution that gives pets a second chance and strengthened my teamwork skills.</dd>
+</dl>
+<div class="card-actions">
+<span class="btn soon" aria-disabled="true">Coming soon</span>
+</div>
+</div>
+</article>
+
+<article class="card">
+<div class="thumb">
+<svg viewBox="0 0 400 250" role="img" aria-label="Illustration of a first-aid cross with a flame" preserveAspectRatio="xMidYMid slice" style="width:100%;height:100%;display:block;background:#3F7099">
+<circle cx="200" cy="125" r="150" fill="#8DB4D3" opacity=".35"/>
+<circle cx="200" cy="125" r="105" fill="#F7F1E3"/>
+<path d="M176 55h48v46h46v48h-46v46h-48v-46h-46v-48h46z" fill="#D9453D" stroke="#3B1F1A" stroke-width="5" stroke-linejoin="round"/>
+<path d="M200 82c14 16 22 26 22 40a22 22 0 0 1-44 0c0-8 4-14 9-20 2 8 6 11 9 11-2-12 0-20 4-31z" fill="#F7C948" stroke="#3B1F1A" stroke-width="3" stroke-linejoin="round"/>
+<path d="M200 124c7 7 10 12 10 18a10 10 0 0 1-20 0c0-6 4-11 10-18z" fill="#F7F1E3"/>
+</svg>
+</div>
+<div class="card-body">
+<div class="card-head"><span class="num" aria-hidden="true">02</span><h3>Kemaduras</h3></div>
+<p class="date">Education &amp; first aid (with Dayana Torres)</p>
+<dl>
+<dt>Problem</dt>
+<dd>In an emergency, it is hard to know how serious a skin burn is and what to do next.</dd>
+<dt>Process</dt>
+<dd>An interactive app with an intelligent simulator that classifies burn degrees from a captured or uploaded photo.</dd>
+<dt>Result</dt>
+<dd>Immediate guidance on first aid and on whether to seek professional medical care or treat at home.</dd>
+</dl>
+<div class="card-actions">
+<a class="btn" href="https://relaxed-treacle-448275.netlify.app" target="_blank" rel="noopener">View project</a>
+</div>
+</div>
+</article>
+
+<article class="card">
+<div class="thumb">
+<svg viewBox="0 0 400 250" role="img" aria-label="Illustration of a dashboard with bar, line and donut charts" preserveAspectRatio="xMidYMid slice" style="width:100%;height:100%;display:block;background:#F7F1E3">
+<rect x="14" y="14" width="372" height="222" rx="14" fill="#fff" stroke="#3B1F1A" stroke-width="3"/>
+<rect x="30" y="30" width="70" height="30" rx="6" fill="#F7C948"/><rect x="108" y="30" width="70" height="30" rx="6" fill="#3F7099"/><rect x="186" y="30" width="70" height="30" rx="6" fill="#3B1F1A"/>
+<!-- bars -->
+<g fill="#3F7099"><rect x="34" y="150" width="20" height="62"/><rect x="62" y="124" width="20" height="88"/><rect x="90" y="138" width="20" height="74" fill="#F7C948"/><rect x="118" y="100" width="20" height="112"/><rect x="146" y="116" width="20" height="96" fill="#F7C948"/></g>
+<path d="M28 212h150" stroke="#3B1F1A" stroke-width="2"/>
+<!-- line -->
+<path d="M200 190l30-30 30 14 30-44 30 18 36-46" fill="none" stroke="#3B1F1A" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+<g fill="#F7C948" stroke="#3B1F1A" stroke-width="2"><circle cx="230" cy="160" r="5"/><circle cx="260" cy="174" r="5"/><circle cx="290" cy="130" r="5"/><circle cx="320" cy="148" r="5"/><circle cx="356" cy="102" r="5"/></g>
+<!-- donut -->
+<circle cx="316" cy="52" r="0" fill="none"/>
+<g transform="translate(300 72)"><circle r="26" fill="none" stroke="#3F7099" stroke-width="12"/><circle r="26" fill="none" stroke="#F7C948" stroke-width="12" stroke-dasharray="50 200" transform="rotate(-90)"/><circle r="26" fill="none" stroke="#3B1F1A" stroke-width="12" stroke-dasharray="30 200" stroke-dashoffset="-50" transform="rotate(-90)"/></g>
+</svg>
+</div>
+<div class="card-body">
+<div class="card-head"><span class="num" aria-hidden="true">03</span><h3>Power BI Dashboard</h3></div>
+<p class="date">Data visualization</p>
+<dl>
+<dt>Problem</dt>
+<dd>Raw data is hard to read and makes strategic decisions slow.</dd>
+<dt>Process</dt>
+<dd>An interactive dashboard suite in Power BI covering sales, customer service, and HR analytics.</dd>
+<dt>Result</dt>
+<dd>Clear, structured insights that support informed decision-making.</dd>
+</dl>
+<div class="card-actions">
+<a class="btn" href="https://superate2014-my.sharepoint.com/:f:/g/personal/valeria_ortiz2026_adoc_superate_org/IgAuNmqGdEuBS5AH6x7ypA14AalAvTIBJU9eglUHDkUCQSk?e=J77bJF" target="_blank" rel="noopener">View dashboard</a>
+</div>
+</div>
+</article>
+
+</div>
+</section>
+
+<section id="skills" class="skills" aria-labelledby="skills-title">
+<div class="panel blue">
+<div class="sec-title"><svg class="ico" aria-hidden="true"><use href="#sun"/></svg><h2 id="skills-title">Hard skills</h2></div>
+<ul class="hard">
+<li><strong>Data Analysis</strong><span>Excel Expert (<a href="https://superate2014-my.sharepoint.com/:f:/g/personal/valeria_ortiz2026_adoc_superate_org/IgC8xxqKZmIjQouqiaKaWawtAe5EPbJqCaopRXiEi1yP0f8?e=Dm4w12" target="_blank" rel="noopener">Certificates ↗</a>) / Power BI / Office Specialist</span></li>
+<li><strong>English Language</strong><span>Intermediate Level / TOEIC Certified (575 pts) / TELUS Digital Conversation Club</span></li>
+<li><strong>Programming &amp; Development</strong><span>JavaScript, SQL, HTML, CSS</span></li>
+</ul>
+</div>
+<div class="panel dark">
+<div class="sec-title"><svg class="ico" aria-hidden="true"><use href="#sun"/></svg><h2>Soft skills</h2></div>
+<ul class="chips">
+<li>Leadership</li>
+<li>Assertive communication</li>
+<li>Project &amp; time management</li>
+<li>Problem-solving</li>
+<li>Teamwork &amp; active listening</li>
+<li>Organization</li>
+<li>Self-discipline</li>
+<li>Adaptability &amp; flexibility</li>
+</ul>
+</div>
+</section>
+</main>
+
+<footer id="contacto">
+<div class="contact">
+<div class="yellow">
+<p style="margin:0;font-weight:600">Have a project or an opportunity in mind?</p>
+<h2>Let’s build something bright</h2>
+<p>Send me an email or find me on my professional profiles. I’d love to hear from you.</p>
+<a class="btn" href="mailto:vaoh0508@gmail.com">Email me</a>
+</div>
+<div class="blue">
+<h3 style="margin-bottom:1rem">Get in touch</h3>
+<ul class="links">
+<li><a href="mailto:vaoh0508@gmail.com"><svg class="ico" aria-hidden="true"><use href="#sun"/></svg>vaoh0508@gmail.com</a></li>
+<li><a href="https://www.linkedin.com/in/valeria-ortiz5/" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#sun"/></svg>LinkedIn: valeria-ortiz5</a></li>
+</ul>
+<div class="thanks"><svg class="ico" aria-hidden="true"><use href="#sun"/></svg>Thank you for visiting!<br><span style="font-weight:400;font-size:.9rem">Keep shining and stay inspired.</span></div>
+</div>
+</div>
+<p class="copy">© <span id="year">2026</span> Valeria Azucena Ortiz Hurtado. All rights reserved.</p>
+</footer>
+
+<script>
+const btn=document.querySelector('.menu-btn');
+const menu=document.getElementById('menu');
+btn.addEventListener('click',()=>{const open=menu.classList.toggle('open');btn.setAttribute('aria-expanded',open)});
+menu.addEventListener('click',e=>{if(e.target.tagName==='A'){menu.classList.remove('open');btn.setAttribute('aria-expanded','false')}});
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
