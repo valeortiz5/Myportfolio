@@ -9,16 +9,14 @@
 <meta property="og:description" content="High school student and ¡Supérate! ADOC scholar focused on marketing and technology.">
 <meta property="og:type" content="website">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☀️</text></svg>">
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-
 <style>
 :root{--cream:#F7F1E3;--yellow:#F7C948;--blue:#3F7099;--brown:#3B1F1A;--soft:#5A3F38;--sky:#8DB4D3;
 --font-display:"Anton","Arial Narrow",Impact,sans-serif;--font-body:"Poppins",system-ui,-apple-system,"Segoe UI",sans-serif;
 --radius:22px;--pill:999px;--max:1160px;--pad:clamp(1.1rem,4vw,2.5rem)}
-*,*::before,*::after{box-sizing:border-box}
+,::before,::after{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:4.5rem}
 body{margin:0;font-family:var(--font-body);color:var(--brown);background:var(--cream);line-height:1.7}
 img{max-width:100%;display:block}
@@ -46,7 +44,6 @@ h3{font-family:var(--font-body);font-weight:600;font-size:1.15rem}
 .pill.y{background:var(--yellow);color:var(--brown)}
 .pill.o{border:1.5px solid var(--brown)}
 .pill.b{background:var(--blue);color:#fff;font-size:.9rem;padding:.5rem 1.4rem}
-
 .nav{position:sticky;top:0;z-index:20;background:var(--cream);border-bottom:1px solid rgba(59,31,26,.15)}
 .nav .wrap{display:flex;align-items:center;justify-content:space-between;min-height:3.5rem}
 .brand{display:flex;align-items:center;gap:.5rem;font-family:var(--font-display);font-size:1.25rem;letter-spacing:.04em;text-decoration:none}
@@ -60,7 +57,6 @@ h3{font-family:var(--font-body);font-weight:600;font-size:1.15rem}
 .nav ul{display:none;position:absolute;left:0;right:0;top:100%;flex-direction:column;gap:0;background:var(--cream);border-bottom:1px solid rgba(59,31,26,.15)}
 .nav ul.open{display:flex}
 .nav ul a{display:block;padding:.9rem var(--pad)}}
-
 .hero{position:relative;overflow-x:clip;padding-top:1.5rem;padding-bottom:2rem}
 .disc{position:absolute;left:-7rem;top:3rem;width:clamp(9rem,24vw,16rem);aspect-ratio:1;border-radius:50%;background:var(--yellow)}
 .burst{position:absolute;right:-3.5rem;top:1rem;width:clamp(8rem,22vw,15rem);aspect-ratio:1;color:var(--yellow)}
@@ -78,7 +74,6 @@ h3{font-family:var(--font-body);font-weight:600;font-size:1.15rem}
 .tagline{margin:0 0 1.25rem;color:var(--soft);max-width:36rem}
 .row{display:flex;flex-wrap:wrap;gap:.6rem;margin-bottom:1.25rem}
 @media(min-width:900px){.hero-grid{grid-template-columns:1fr 1.05fr;gap:2.5rem;align-items:start}.intro{padding-top:1rem}}
-
 .stats{list-style:none;display:grid;grid-template-columns:repeat(2,1fr);gap:1.25rem 0;margin:0 0 1.25rem;padding:1.5rem 0;border-radius:var(--radius)}
 .stats li{padding:0 1.25rem;text-align:left}
 .stats li+li{border-left:1px solid rgba(247,241,227,.3)}
@@ -86,14 +81,12 @@ h3{font-family:var(--font-body);font-weight:600;font-size:1.15rem}
 .stats b{display:block;font-family:var(--font-display);font-weight:400;font-size:clamp(2rem,5vw,2.8rem);line-height:1;color:var(--yellow)}
 .stats span{font-size:.8rem}
 @media(min-width:720px){.stats{grid-template-columns:repeat(4,1fr)}.stats li:nth-child(3){border-left:1px solid rgba(247,241,227,.3)}}
-
 .about{display:grid;gap:1.5rem}
 .about p{margin:0 0 1.1rem;max-width:64ch}
 .about p:last-child{margin-bottom:0}
 @media(min-width:900px){.about{grid-template-columns:1fr 1.6fr;gap:3rem}}
 .about .intro-title{font-family:var(--font-display);font-size:clamp(2.4rem,6vw,4rem);line-height:1;text-transform:uppercase;color:var(--yellow)}
 .badges{list-style:none;margin:1.25rem 0 0;padding:0;display:flex;flex-wrap:wrap;gap:.5rem}
-
 .cards{display:grid;gap:1.25rem;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
 .card{background:var(--cream);border-radius:16px;overflow:hidden;display:flex;flex-direction:column;border:2px solid var(--brown)}
 .thumb{aspect-ratio:16/10;background:linear-gradient(135deg,var(--sky),var(--blue))}
@@ -106,7 +99,6 @@ h3{font-family:var(--font-body);font-weight:600;font-size:1.15rem}
 .card dt{font-weight:600;margin-top:.6rem;color:var(--blue)}
 .card dd{margin:0;color:var(--soft)}
 .card-actions{margin-top:auto;padding-top:1rem;display:flex;flex-wrap:wrap;gap:.6rem}
-
 .skills{display:grid;gap:1.25rem;margin-bottom:1.25rem}
 .skills .panel{margin-bottom:0}
 @media(min-width:900px){.skills{grid-template-columns:1fr 1.3fr}}
@@ -117,7 +109,6 @@ h3{font-family:var(--font-body);font-weight:600;font-size:1.15rem}
 .hard a{color:var(--yellow)}
 .chips{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:.6rem}
 .chips li{border:1.5px solid var(--yellow);border-radius:var(--pill);padding:.45rem 1rem;font-size:.92rem;font-weight:500}
-
 .contact{display:grid}
 .contact>div{padding:clamp(2rem,6vw,3.5rem) var(--pad)}
 .contact h2{font-family:var(--font-display);font-size:clamp(2.2rem,6vw,3.6rem);line-height:1.05;text-transform:uppercase;margin:.4rem 0 1.25rem}
@@ -129,18 +120,16 @@ h3{font-family:var(--font-body);font-weight:600;font-size:1.15rem}
 .thanks{margin-top:1.5rem;display:inline-block;background:var(--cream);color:var(--blue);border-radius:16px;padding:1rem 1.5rem;font-weight:600;text-align:center}
 .thanks .ico{color:var(--yellow);margin:0 auto .25rem}
 .copy{margin:0;padding:1rem var(--pad);text-align:center;font-size:.85rem;background:var(--brown);color:var(--cream)}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}{transition:none!important}}
 </style>
 </head>
 <body>
-
 <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
 <symbol id="sun" viewBox="0 0 200 200">
 <circle cx="100" cy="100" r="70" fill="none" stroke="currentColor" stroke-width="56" stroke-dasharray="2.4 15.93"/>
 <circle cx="100" cy="100" r="28" fill="currentColor"/>
 </symbol>
 </svg>
-
 <nav class="nav" aria-label="Main navigation">
 <div class="wrap">
 <a class="brand" href="#inicio"><svg class="ico" aria-hidden="true"><use href="#sun"/></svg>Valeria Ortiz</a>
@@ -153,7 +142,6 @@ h3{font-family:var(--font-body);font-weight:600;font-size:1.15rem}
 </ul>
 </div>
 </nav>
-
 <header class="hero" id="inicio">
 <div class="disc" aria-hidden="true"></div>
 <svg class="burst" aria-hidden="true"><use href="#sun"/></svg>
@@ -184,7 +172,6 @@ h3{font-family:var(--font-body);font-weight:600;font-size:1.15rem}
 </div>
 </div>
 </header>
-
 <main class="wrap">
 <ul class="stats dark" aria-label="Quick facts">
 <li><b>3</b><span>Featured projects</span></li>
@@ -192,7 +179,6 @@ h3{font-family:var(--font-body);font-weight:600;font-size:1.15rem}
 <li><b>3</b><span>Certifications highlighted</span></li>
 <li><b>8</b><span>Soft skills</span></li>
 </ul>
-
 <section id="sobre-mi" class="panel blue" aria-labelledby="about-title">
 <div class="about">
 <div>
@@ -210,11 +196,9 @@ h3{font-family:var(--font-body);font-weight:600;font-size:1.15rem}
 </div>
 </div>
 </section>
-
 <section id="proyectos" class="panel yellow" aria-labelledby="projects-title">
 <div class="sec-title"><svg class="ico" aria-hidden="true"><use href="#sun"/></svg><h2 id="projects-title">Featured projects</h2></div>
 <div class="cards">
-
 <article class="card">
 <div class="thumb">
 <svg viewBox="0 0 400 250" role="img" aria-label="Illustration of a dog and a cat with a heart between them" preserveAspectRatio="xMidYMid slice" style="width:100%;height:100%;display:block;background:#F7C948">
@@ -257,7 +241,6 @@ h3{font-family:var(--font-body);font-weight:600;font-size:1.15rem}
 </div>
 </div>
 </article>
-
 <article class="card">
 <div class="thumb">
 <svg viewBox="0 0 400 250" role="img" aria-label="Illustration of a first-aid cross with a flame" preserveAspectRatio="xMidYMid slice" style="width:100%;height:100%;display:block;background:#3F7099">
@@ -284,7 +267,6 @@ h3{font-family:var(--font-body);font-weight:600;font-size:1.15rem}
 </div>
 </div>
 </article>
-
 <article class="card">
 <div class="thumb">
 <svg viewBox="0 0 400 250" role="img" aria-label="Illustration of a dashboard with bar, line and donut charts" preserveAspectRatio="xMidYMid slice" style="width:100%;height:100%;display:block;background:#F7F1E3">
@@ -317,10 +299,8 @@ h3{font-family:var(--font-body);font-weight:600;font-size:1.15rem}
 </div>
 </div>
 </article>
-
 </div>
 </section>
-
 <section id="skills" class="skills" aria-labelledby="skills-title">
 <div class="panel blue">
 <div class="sec-title"><svg class="ico" aria-hidden="true"><use href="#sun"/></svg><h2 id="skills-title">Hard skills</h2></div>
@@ -345,7 +325,6 @@ h3{font-family:var(--font-body);font-weight:600;font-size:1.15rem}
 </div>
 </section>
 </main>
-
 <footer id="contacto">
 <div class="contact">
 <div class="blue">
@@ -360,7 +339,6 @@ h3{font-family:var(--font-body);font-weight:600;font-size:1.15rem}
 </div>
 <p class="copy">© <span id="year">2026</span> Valeria Azucena Ortiz Hurtado. All rights reserved.</p>
 </footer>
-
 <script>
 const btn=document.querySelector('.menu-btn');
 const menu=document.getElementById('menu');
